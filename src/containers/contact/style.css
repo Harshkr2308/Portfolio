@@ -1,0 +1,117 @@
+.contact__content {
+    padding: 20px;
+  }
+  
+  .contact__content__header-text {
+    color: var(--yellow-theme-sub-text-color);
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+  }
+  
+  .contact__content__header-text::before,
+  .contact__content__header-text::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+  }
+  
+  .contact__content__header-text::before {
+    left: 0;
+  }
+  
+  .contact__content__header-text::after {
+    right: 0;
+  }
+  
+  .contact__content__form {
+    margin-top: 30px;
+  }
+  
+  .contact__content__form__controlswrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .contact__content__form__controlswrapper div {
+    position: relative;
+  }
+  
+  .contact__content__form__controlswrapper input.inputName,
+  .contact__content__form__controlswrapper input.inputEmail,
+  .contact__content__form__controlswrapper textarea.inputDescription {
+    width: 100%;
+    border: 2px solid var(--yellow-theme-main-color);
+    padding: 16px 12px;
+    transition: all 0.5s ease;
+    position: relative;
+    background-color: transparent;
+    color: var(--yellow-theme-sub-text-color);
+  }
+  
+  .contact__content__form__controlswrapper label.nameLabel,
+  .contact__content__form__controlswrapper label.emailLabel,
+  .contact__content__form__controlswrapper label.descriptionLabel {
+    font-weight: 500;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    transition: all 0.2s ease;
+    color: var(--yellow-theme-sub-text-color);
+    font-size: 16px;
+  }
+  
+  .contact__content__form__controlswrapper input.inputName:focus,
+  .contact__content__form__controlswrapper input.inputEmail:focus,
+  .contact__content__form__controlswrapper textarea.inputDescription:focus {
+    outline: none;
+  }
+  
+  .contact__content__form__controlswrapper input.inputName:focus + label.nameLabel,
+  .contact__content__form__controlswrapper input.inputName:valid + label.nameLabel,
+  .contact__content__form__controlswrapper input.inputEmail:focus + label.emailLabel,
+  .contact__content__form__controlswrapper input.inputEmail:valid + label.emailLabel,
+  .contact__content__form__controlswrapper textarea.inputDescription:focus + label.descriptionLabel,
+  .contact__content__form__controlswrapper textarea.inputDescription:valid + label.descriptionLabel {
+    font-size: 18px;
+    top: -25px;
+    left: 0px;
+  }
+  
+  .contact__content button {
+    cursor: pointer;
+    padding: 10px 70px;
+    font-size: 2rem;
+    background: transparent;
+    color: var(--yellow-theme-main-color);
+    border: 1.5px solid var(--yellow-theme-main-color);
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .contact__content button:hover {
+    color: #000;
+    background: var(--yellow-theme-main-color);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .contact__content__form {
+      text-align: center;
+    }
+  
+    .contact__content__form__controlswrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

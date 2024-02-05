@@ -3,19 +3,7 @@ export const data = {
     {
       title: "Front-end developer Intern,",
       subTitle: "Crystal clear Services Pvt Ltd",
-      description: " User Experience, Visual Design",
-      year: "2020-present",
-    },
-    {
-      title: "Senior Consultant",
-      subTitle: "London, UK",
-      description: "Web development, Databases, Backend developement",
-      year: "2020-present",
-    },
-    {
-      title: "Project Manager",
-      subTitle: "Bangalore, INDIA",
-      description: "Creative Direction Project Management, Team Leading",
+      description: "Impementing UI/UX for open source and company site",
       year: "2020-present",
     },
   ],

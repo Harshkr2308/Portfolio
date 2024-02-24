@@ -3,6 +3,7 @@
     align-items: center;
     padding: 20px;
     border-bottom: 1px dashed var(--yellow-theme-main-color);
+    
   }
   
   .wrapper h2 {
@@ -14,6 +15,7 @@
     color: var(--yellow-theme-main-color);
     display: flex;
     flex-grow: 1;
+
   }
   
   .wrapper span svg {

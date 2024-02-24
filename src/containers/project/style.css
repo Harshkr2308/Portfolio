@@ -40,7 +40,7 @@
   }
   
   .portfolio__content__cards__item {
-    height: 366px;
+    height: auto;
     cursor: pointer;
     position: relative;
     object-fit: contain;
@@ -54,15 +54,14 @@
     height: 100%;
   }
   
-  .portfolio__content__cards__item__img-wrapper a {
-    height: 100%;
-  }
+ 
   
-  .portfolio__content__cards__item__img-wrapper a img {
+  .portfolio__content__cards__item__img-wrapper  img {
     height: inherit;
     object-fit: cover;
     overflow: hidden;
     width: 100%;
+    height: auto;
   }
   
   .overlay {

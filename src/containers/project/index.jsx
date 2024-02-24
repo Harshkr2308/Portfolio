@@ -12,19 +12,13 @@ const portfolioData = [
       "https://res.cloudinary.com/dko27pkev/image/upload/v1706964802/WhatsApp_Image_2024-02-03_at_6.22.57_PM_bvpymf.jpg",
     link: "https://splendid-scone-f8c8be.netlify.app/",
   },
-  {
-    id: 3,
-    name: "Chat App",
-    link: "https://harshkr2308.github.io/Discussion-Bot/",
-    image:
-      "https://res.cloudinary.com/dko27pkev/image/upload/v1693125857/chatapp/receive_dskoc7.png",
-  },
+  
   {
     id: 2,
     name: "Moms Store",
     image:
       "https://res.cloudinary.com/dko27pkev/image/upload/v1706964386/WhatsApp_Image_2024-02-03_at_6.16.04_PM_p5sjh1.jpg",
-    link: "https://harshkr2308.github.io/Mom-s_store/",
+    link: "https://moms-store.netlify.app/",
   },
   {
     id: 2,
@@ -40,19 +34,27 @@ const portfolioData = [
       "https://res.cloudinary.com/dko27pkev/image/upload/v1698293591/cur_coklva.png",
     link: "https://drive.google.com/file/d/1uokZQ3zqUY0Jtytkhz2oPbat8AegM3_l/view?usp=sharing",
   },
+  
+  {
+    id: 3,
+    name: "Weather-finder",
+    image:
+      "https://res.cloudinary.com/dko27pkev/image/upload/v1708767009/WhatsApp_Image_2024-02-24_at_2.59.49_PM_qamnks.jpg",
+    link: "https://incredible-florentine-6cdedf.netlify.app/",
+  },
+  {
+    id: 3,
+    name: "Chat App",
+    link: "https://harshkr2308.github.io/Discussion-Bot/",
+    image:
+      "https://res.cloudinary.com/dko27pkev/image/upload/v1693125857/chatapp/receive_dskoc7.png",
+  },
   {
     id: 3,
     name: "Grievence-Management-System-IIITG",
     image:
       "https://res.cloudinary.com/dko27pkev/image/upload/v1707121649/WhatsApp_Image_2024-02-05_at_1.57.06_PM_u8uc8h.jpg",
     link: "https://gms-23-hah.000webhostapp.com/",
-  },
-  {
-    id: 3,
-    name: "Weather-finder",
-    image:
-      "https://res.cloudinary.com/dko27pkev/image/upload/v1707122240/WhatsApp_Image_2024-02-05_at_2.06.04_PM_mrnybv.jpg",
-    link: "https://incredible-florentine-6cdedf.netlify.app/",
   },
 ];
 
@@ -115,15 +117,11 @@ const Project = () => {
               onMouseEnter={() => handleHover(index)}
               onMouseLeave={() => handleHover(null)}
             >
-              <div className="portfolio__content__cards__item__img-wrapper">
-                <a>
-                  <img
-                    alt="dummy data"
-                    src={item.image}
-                    
-                  />
-                </a>
-              </div>
+              <a>
+                <div className="portfolio__content__cards__item__img-wrapper">
+                  <img alt="dummy data" src={item.image} />
+                </div>
+              </a>
               <div className="overlay">
                 {index === hoveredValue && (
                   <div>

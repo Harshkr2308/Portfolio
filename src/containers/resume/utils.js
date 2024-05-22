@@ -1,10 +1,16 @@
 export const data = {
   experience: [
     {
-      title: "Front-end developer Intern,",
+      title: "FrontEnd developer Intern ,",
       subTitle: "Crystal clear Services Pvt Ltd",
       description: "Impementing UI/UX for open source and company site",
-      year: "2020-present",
+      year: "Dec 2023 - April 2024",
+    },
+    {
+      title: "Sde Intern ,",
+      subTitle: "PAiGPT Fintech.ai",
+      description: "Working on the web app of the company site ",
+      year: "May 2024- Present",
     },
   ],
   education: [
